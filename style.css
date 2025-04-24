@@ -18,7 +18,7 @@ body {
     width: 100%;
     position: sticky;
     top: 0;
-    z-index: 100; 
+    z-index: 100;
     padding: 15px 40px;
     display: flex;
     align-items: center;
@@ -30,7 +30,7 @@ img {
 
 .header-logo {
     width: 70px;
-    margin-right: 30px;  
+    margin-right: 30px;
 }
 
 .nav-container {
@@ -70,12 +70,14 @@ nav a:hover {
 }
 
 .video-wrap {
-    position: relative;
     display: block;
     width: 100%;
     height: 100vh;
+    position: relative;
     z-index: 1;
     top: 0;
+    left: 0;
+
 }
 
 
@@ -83,18 +85,19 @@ nav a:hover {
     width: 100%;
     height: 100vh;
     display: block;
-    position: sticky;
     overflow: hidden;
     object-fit: cover;
     object-position: center;
+    position: sticky;
     top: 0;
     left: 0;
-} 
+    z-index: 1;
+}
 
 
 
 .bg-video {
-    position: absolute;
+    position: sticky;
     display: block;
     height: 100vh;
     object-fit: cover;
@@ -106,44 +109,63 @@ nav a:hover {
     transition: 333ms ease-in-out opacity;
     width: 100%;
     z-index: 0;
-    overflow:hidden;
-} 
+    overflow: hidden;
+}
+
+/* 
+.first-video .bg-area {
+    position: sticky;
+    top: 0;
+}
+
+.second-video .bg-area {
+    position: sticky;
+    top: 100vh;
+}
 
 
-    .hero-text {
-        position: relative;
-        /* top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%); */
-        z-index: 2;
-        color: white;
-        text-align: center;
-        background: rgba(0, 0, 0, 0.5);
-        border-radius: 10px;
-        margin: -50vh auto;
-        max-width: 600px;
-        padding: 20px;
-    }
+.third-video .bg-area {
+    position: sticky;
+    top: 200vh;
+}
 
-    .hero-text h1 {
-        font-size: 24px;
-        line-height: 1.2;
-        margin-bottom: 20px;
-        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-    }
+.forth-video {
+    position: sticky;
+    top: 300vh;
+} */
 
-    .top-button {
-        display: inline-block;
-        padding: 10px 20px;
-        background: #1877f2;
-        color: #fff;
-        text-decoration: none;
-        border-radius: 25px;
-        font-weight: 500;
-        transition: background 0.3s;
-    }
-    
-    .top-button:hover {
-        background: #145db2;
 
-    }
+.hero-text {
+    position: relative;
+    z-index: 2;
+    color: white;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    margin: -50vh auto;
+    max-width: 600px;
+    padding: 20px;
+}
+
+.hero-text h1 {
+    font-size: 24px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.top-button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #1877f2;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 25px;
+    font-weight: 500;
+    transition: background 0.3s;
+}
+
+.top-button:hover {
+    background: #145db2;
+
+}
